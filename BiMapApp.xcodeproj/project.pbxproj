@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		207A4BDADA4C7208E23477F4 /* Pods_BiMapApp_BiMapAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6CCC3CAD8DBFEF3371DF9A /* Pods_BiMapApp_BiMapAppUITests.framework */; };
+		254FF3ECB87E6D907492C357 /* Pods_BiMapApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3E46BA1C449F2BB2A6020A /* Pods_BiMapApp.framework */; };
+		B51F97EB2AB8BD30001A5AB7 /* GoogleDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F97EA2AB8BD30001A5AB7 /* GoogleDirections.swift */; };
+		B51F97EE2AB8BFF2001A5AB7 /* GoogleDirectionsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F97ED2AB8BFF2001A5AB7 /* GoogleDirectionsModels.swift */; };
+		B53F611E2AB77C3D00C0F3CB /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53F611D2AB77C3D00C0F3CB /* SearchTextField.swift */; };
+		B5948B3E2AB74D4D00D16606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5948B3D2AB74D4D00D16606 /* AppDelegate.swift */; };
+		B5948B402AB74D4D00D16606 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5948B3F2AB74D4D00D16606 /* SceneDelegate.swift */; };
+		B5948B452AB74D4D00D16606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5948B432AB74D4D00D16606 /* Main.storyboard */; };
+		B5948B472AB74D4E00D16606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5948B462AB74D4E00D16606 /* Assets.xcassets */; };
+		B5948B4A2AB74D4E00D16606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5948B482AB74D4E00D16606 /* LaunchScreen.storyboard */; };
+		B5948B552AB74D4E00D16606 /* BiMapAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5948B542AB74D4E00D16606 /* BiMapAppTests.swift */; };
+		B5948B5F2AB74D4E00D16606 /* BiMapAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5948B5E2AB74D4E00D16606 /* BiMapAppUITests.swift */; };
+		B5948B612AB74D4E00D16606 /* BiMapAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5948B602AB74D4E00D16606 /* BiMapAppUITestsLaunchTests.swift */; };
+		B5BE87012AB868D800C1A82C /* MyMapViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE87002AB868D800C1A82C /* MyMapViewControllerExtension.swift */; };
+		B5E2814B2AB9B1680020DA6B /* EProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E2814A2AB9B1680020DA6B /* EProvider.swift */; };
+		B5EA9D862AB757D700CFAAAC /* MyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA9D852AB757D700CFAAAC /* MyMapViewController.swift */; };
+		C28BBFA6C3B4B4BB7A5322A5 /* Pods_BiMapAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8012325AEE58C13AF6D13891 /* Pods_BiMapAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5948B512AB74D4E00D16606 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5948B322AB74D4D00D16606 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5948B392AB74D4D00D16606;
+			remoteInfo = BiMapApp;
+		};
+		B5948B5B2AB74D4E00D16606 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5948B322AB74D4D00D16606 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5948B392AB74D4D00D16606;
+			remoteInfo = BiMapApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C61FF78FF5DB21CA3F4D4E2 /* Pods-BiMapAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiMapAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BiMapAppTests/Pods-BiMapAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6222CC8A6B4D264BBAC8D0D2 /* Pods-BiMapApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiMapApp.release.xcconfig"; path = "Target Support Files/Pods-BiMapApp/Pods-BiMapApp.release.xcconfig"; sourceTree = "<group>"; };
+		8012325AEE58C13AF6D13891 /* Pods_BiMapAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiMapAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A244A32472878BFF1697F7 /* Pods-BiMapApp-BiMapAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiMapApp-BiMapAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-BiMapApp-BiMapAppUITests/Pods-BiMapApp-BiMapAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A3E46BA1C449F2BB2A6020A /* Pods_BiMapApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiMapApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F347C1FC5C69E4F52741D96 /* Pods-BiMapAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiMapAppTests.release.xcconfig"; path = "Target Support Files/Pods-BiMapAppTests/Pods-BiMapAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		B51F97EA2AB8BD30001A5AB7 /* GoogleDirections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDirections.swift; sourceTree = "<group>"; };
+		B51F97ED2AB8BFF2001A5AB7 /* GoogleDirectionsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDirectionsModels.swift; sourceTree = "<group>"; };
+		B53F611D2AB77C3D00C0F3CB /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		B5948B3A2AB74D4D00D16606 /* BiMapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiMapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5948B3D2AB74D4D00D16606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5948B3F2AB74D4D00D16606 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B5948B442AB74D4D00D16606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5948B462AB74D4E00D16606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5948B492AB74D4E00D16606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5948B4B2AB74D4E00D16606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5948B502AB74D4E00D16606 /* BiMapAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiMapAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5948B542AB74D4E00D16606 /* BiMapAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiMapAppTests.swift; sourceTree = "<group>"; };
+		B5948B5A2AB74D4E00D16606 /* BiMapAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiMapAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5948B5E2AB74D4E00D16606 /* BiMapAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiMapAppUITests.swift; sourceTree = "<group>"; };
+		B5948B602AB74D4E00D16606 /* BiMapAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiMapAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B5BE87002AB868D800C1A82C /* MyMapViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapViewControllerExtension.swift; sourceTree = "<group>"; };
+		B5E2814A2AB9B1680020DA6B /* EProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EProvider.swift; sourceTree = "<group>"; };
+		B5EA9D852AB757D700CFAAAC /* MyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapViewController.swift; sourceTree = "<group>"; };
+		C6FD4E20190E1585D13EAF9B /* Pods-BiMapApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiMapApp.debug.xcconfig"; path = "Target Support Files/Pods-BiMapApp/Pods-BiMapApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DB6CCC3CAD8DBFEF3371DF9A /* Pods_BiMapApp_BiMapAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiMapApp_BiMapAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F096AA7246F045122FA44026 /* Pods-BiMapApp-BiMapAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiMapApp-BiMapAppUITests.release.xcconfig"; path = "Target Support Files/Pods-BiMapApp-BiMapAppUITests/Pods-BiMapApp-BiMapAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5948B372AB74D4D00D16606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				254FF3ECB87E6D907492C357 /* Pods_BiMapApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5948B4D2AB74D4E00D16606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28BBFA6C3B4B4BB7A5322A5 /* Pods_BiMapAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5948B572AB74D4E00D16606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				207A4BDADA4C7208E23477F4 /* Pods_BiMapApp_BiMapAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01BB11EC5F05B8B17D7504B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD4E20190E1585D13EAF9B /* Pods-BiMapApp.debug.xcconfig */,
+				6222CC8A6B4D264BBAC8D0D2 /* Pods-BiMapApp.release.xcconfig */,
+				80A244A32472878BFF1697F7 /* Pods-BiMapApp-BiMapAppUITests.debug.xcconfig */,
+				F096AA7246F045122FA44026 /* Pods-BiMapApp-BiMapAppUITests.release.xcconfig */,
+				0C61FF78FF5DB21CA3F4D4E2 /* Pods-BiMapAppTests.debug.xcconfig */,
+				9F347C1FC5C69E4F52741D96 /* Pods-BiMapAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B51F97EC2AB8BFD7001A5AB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B51F97ED2AB8BFF2001A5AB7 /* GoogleDirectionsModels.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B53F611C2AB77C2800C0F3CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B53F611D2AB77C3D00C0F3CB /* SearchTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5948B312AB74D4D00D16606 = {
+			isa = PBXGroup;
+			children = (
+				B5948B3C2AB74D4D00D16606 /* BiMapApp */,
+				B5948B532AB74D4E00D16606 /* BiMapAppTests */,
+				B5948B5D2AB74D4E00D16606 /* BiMapAppUITests */,
+				B5948B3B2AB74D4D00D16606 /* Products */,
+				01BB11EC5F05B8B17D7504B9 /* Pods */,
+				E30C8B88B1A6BE651D69D172 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5948B3B2AB74D4D00D16606 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5948B3A2AB74D4D00D16606 /* BiMapApp.app */,
+				B5948B502AB74D4E00D16606 /* BiMapAppTests.xctest */,
+				B5948B5A2AB74D4E00D16606 /* BiMapAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5948B3C2AB74D4D00D16606 /* BiMapApp */ = {
+			isa = PBXGroup;
+			children = (
+				B5E281492AB9B1560020DA6B /* Enum */,
+				B51F97EC2AB8BFD7001A5AB7 /* Model */,
+				B5BE86FF2AB868C300C1A82C /* Extension */,
+				B53F611C2AB77C2800C0F3CB /* View */,
+				B5EA9D842AB7579F00CFAAAC /* ViewController */,
+				B5948B6D2AB74DBC00D16606 /* Utility */,
+				B5948B3D2AB74D4D00D16606 /* AppDelegate.swift */,
+				B5948B3F2AB74D4D00D16606 /* SceneDelegate.swift */,
+				B5948B432AB74D4D00D16606 /* Main.storyboard */,
+				B5948B462AB74D4E00D16606 /* Assets.xcassets */,
+				B5948B482AB74D4E00D16606 /* LaunchScreen.storyboard */,
+				B5948B4B2AB74D4E00D16606 /* Info.plist */,
+			);
+			path = BiMapApp;
+			sourceTree = "<group>";
+		};
+		B5948B532AB74D4E00D16606 /* BiMapAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5948B542AB74D4E00D16606 /* BiMapAppTests.swift */,
+			);
+			path = BiMapAppTests;
+			sourceTree = "<group>";
+		};
+		B5948B5D2AB74D4E00D16606 /* BiMapAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5948B5E2AB74D4E00D16606 /* BiMapAppUITests.swift */,
+				B5948B602AB74D4E00D16606 /* BiMapAppUITestsLaunchTests.swift */,
+			);
+			path = BiMapAppUITests;
+			sourceTree = "<group>";
+		};
+		B5948B6D2AB74DBC00D16606 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B51F97EA2AB8BD30001A5AB7 /* GoogleDirections.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B5BE86FF2AB868C300C1A82C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5BE87002AB868D800C1A82C /* MyMapViewControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B5E281492AB9B1560020DA6B /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				B5E2814A2AB9B1680020DA6B /* EProvider.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		B5EA9D842AB7579F00CFAAAC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B5EA9D852AB757D700CFAAAC /* MyMapViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E30C8B88B1A6BE651D69D172 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A3E46BA1C449F2BB2A6020A /* Pods_BiMapApp.framework */,
+				DB6CCC3CAD8DBFEF3371DF9A /* Pods_BiMapApp_BiMapAppUITests.framework */,
+				8012325AEE58C13AF6D13891 /* Pods_BiMapAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5948B392AB74D4D00D16606 /* BiMapApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5948B642AB74D4E00D16606 /* Build configuration list for PBXNativeTarget "BiMapApp" */;
+			buildPhases = (
+				BE40395A8AEF7881A3B58565 /* [CP] Check Pods Manifest.lock */,
+				B5948B362AB74D4D00D16606 /* Sources */,
+				B5948B372AB74D4D00D16606 /* Frameworks */,
+				B5948B382AB74D4D00D16606 /* Resources */,
+				0230D318A9A7E17EDC392C5C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BiMapApp;
+			productName = BiMapApp;
+			productReference = B5948B3A2AB74D4D00D16606 /* BiMapApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5948B4F2AB74D4E00D16606 /* BiMapAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5948B672AB74D4E00D16606 /* Build configuration list for PBXNativeTarget "BiMapAppTests" */;
+			buildPhases = (
+				A9A55ADFCAEF123D914F3720 /* [CP] Check Pods Manifest.lock */,
+				B5948B4C2AB74D4E00D16606 /* Sources */,
+				B5948B4D2AB74D4E00D16606 /* Frameworks */,
+				B5948B4E2AB74D4E00D16606 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5948B522AB74D4E00D16606 /* PBXTargetDependency */,
+			);
+			name = BiMapAppTests;
+			productName = BiMapAppTests;
+			productReference = B5948B502AB74D4E00D16606 /* BiMapAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5948B592AB74D4E00D16606 /* BiMapAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5948B6A2AB74D4E00D16606 /* Build configuration list for PBXNativeTarget "BiMapAppUITests" */;
+			buildPhases = (
+				7A700ED6224F8BDDB8E59419 /* [CP] Check Pods Manifest.lock */,
+				B5948B562AB74D4E00D16606 /* Sources */,
+				B5948B572AB74D4E00D16606 /* Frameworks */,
+				B5948B582AB74D4E00D16606 /* Resources */,
+				48A58CD2405DFB064E9A6264 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5948B5C2AB74D4E00D16606 /* PBXTargetDependency */,
+			);
+			name = BiMapAppUITests;
+			productName = BiMapAppUITests;
+			productReference = B5948B5A2AB74D4E00D16606 /* BiMapAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5948B322AB74D4D00D16606 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B5948B392AB74D4D00D16606 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					B5948B4F2AB74D4E00D16606 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B5948B392AB74D4D00D16606;
+					};
+					B5948B592AB74D4E00D16606 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B5948B392AB74D4D00D16606;
+					};
+				};
+			};
+			buildConfigurationList = B5948B352AB74D4D00D16606 /* Build configuration list for PBXProject "BiMapApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5948B312AB74D4D00D16606;
+			productRefGroup = B5948B3B2AB74D4D00D16606 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5948B392AB74D4D00D16606 /* BiMapApp */,
+				B5948B4F2AB74D4E00D16606 /* BiMapAppTests */,
+				B5948B592AB74D4E00D16606 /* BiMapAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5948B382AB74D4D00D16606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5948B4A2AB74D4E00D16606 /* LaunchScreen.storyboard in Resources */,
+				B5948B472AB74D4E00D16606 /* Assets.xcassets in Resources */,
+				B5948B452AB74D4D00D16606 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5948B4E2AB74D4E00D16606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5948B582AB74D4E00D16606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0230D318A9A7E17EDC392C5C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BiMapApp/Pods-BiMapApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BiMapApp/Pods-BiMapApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BiMapApp/Pods-BiMapApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48A58CD2405DFB064E9A6264 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BiMapApp-BiMapAppUITests/Pods-BiMapApp-BiMapAppUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BiMapApp-BiMapAppUITests/Pods-BiMapApp-BiMapAppUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BiMapApp-BiMapAppUITests/Pods-BiMapApp-BiMapAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A700ED6224F8BDDB8E59419 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BiMapApp-BiMapAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9A55ADFCAEF123D914F3720 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BiMapAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE40395A8AEF7881A3B58565 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BiMapApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5948B362AB74D4D00D16606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51F97EE2AB8BFF2001A5AB7 /* GoogleDirectionsModels.swift in Sources */,
+				B5EA9D862AB757D700CFAAAC /* MyMapViewController.swift in Sources */,
+				B5948B3E2AB74D4D00D16606 /* AppDelegate.swift in Sources */,
+				B51F97EB2AB8BD30001A5AB7 /* GoogleDirections.swift in Sources */,
+				B5948B402AB74D4D00D16606 /* SceneDelegate.swift in Sources */,
+				B5BE87012AB868D800C1A82C /* MyMapViewControllerExtension.swift in Sources */,
+				B5E2814B2AB9B1680020DA6B /* EProvider.swift in Sources */,
+				B53F611E2AB77C3D00C0F3CB /* SearchTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5948B4C2AB74D4E00D16606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5948B552AB74D4E00D16606 /* BiMapAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5948B562AB74D4E00D16606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5948B612AB74D4E00D16606 /* BiMapAppUITestsLaunchTests.swift in Sources */,
+				B5948B5F2AB74D4E00D16606 /* BiMapAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5948B522AB74D4E00D16606 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5948B392AB74D4D00D16606 /* BiMapApp */;
+			targetProxy = B5948B512AB74D4E00D16606 /* PBXContainerItemProxy */;
+		};
+		B5948B5C2AB74D4E00D16606 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5948B392AB74D4D00D16606 /* BiMapApp */;
+			targetProxy = B5948B5B2AB74D4E00D16606 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5948B432AB74D4D00D16606 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5948B442AB74D4D00D16606 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5948B482AB74D4E00D16606 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5948B492AB74D4E00D16606 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5948B622AB74D4E00D16606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5948B632AB74D4E00D16606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5948B652AB74D4E00D16606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6FD4E20190E1585D13EAF9B /* Pods-BiMapApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VNU8KKW4GG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BiMapApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.derkach.BiMapApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5948B662AB74D4E00D16606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6222CC8A6B4D264BBAC8D0D2 /* Pods-BiMapApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VNU8KKW4GG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BiMapApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.derkach.BiMapApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5948B682AB74D4E00D16606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C61FF78FF5DB21CA3F4D4E2 /* Pods-BiMapAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VNU8KKW4GG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.derkach.BiMapAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiMapApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BiMapApp";
+			};
+			name = Debug;
+		};
+		B5948B692AB74D4E00D16606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F347C1FC5C69E4F52741D96 /* Pods-BiMapAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VNU8KKW4GG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.derkach.BiMapAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiMapApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BiMapApp";
+			};
+			name = Release;
+		};
+		B5948B6B2AB74D4E00D16606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A244A32472878BFF1697F7 /* Pods-BiMapApp-BiMapAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VNU8KKW4GG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.derkach.BiMapAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BiMapApp;
+			};
+			name = Debug;
+		};
+		B5948B6C2AB74D4E00D16606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F096AA7246F045122FA44026 /* Pods-BiMapApp-BiMapAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VNU8KKW4GG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.derkach.BiMapAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BiMapApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5948B352AB74D4D00D16606 /* Build configuration list for PBXProject "BiMapApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5948B622AB74D4E00D16606 /* Debug */,
+				B5948B632AB74D4E00D16606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5948B642AB74D4E00D16606 /* Build configuration list for PBXNativeTarget "BiMapApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5948B652AB74D4E00D16606 /* Debug */,
+				B5948B662AB74D4E00D16606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5948B672AB74D4E00D16606 /* Build configuration list for PBXNativeTarget "BiMapAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5948B682AB74D4E00D16606 /* Debug */,
+				B5948B692AB74D4E00D16606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5948B6A2AB74D4E00D16606 /* Build configuration list for PBXNativeTarget "BiMapAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5948B6B2AB74D4E00D16606 /* Debug */,
+				B5948B6C2AB74D4E00D16606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5948B322AB74D4D00D16606 /* Project object */;
+}

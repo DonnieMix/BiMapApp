@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Map View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MyMapViewController" customModule="BiMapApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AfW-DL-i1I">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gS0-fQ-tK9" customClass="GMSMapView">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="gS0-fQ-tK9" firstAttribute="leading" secondItem="AfW-DL-i1I" secondAttribute="leading" id="Xp6-zv-QrJ"/>
+                                    <constraint firstItem="gS0-fQ-tK9" firstAttribute="top" secondItem="AfW-DL-i1I" secondAttribute="top" id="bgD-p8-Mjt"/>
+                                    <constraint firstAttribute="bottom" secondItem="gS0-fQ-tK9" secondAttribute="bottom" id="shT-nL-hya"/>
+                                    <constraint firstAttribute="trailing" secondItem="gS0-fQ-tK9" secondAttribute="trailing" id="slO-PZ-ccP"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search location..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="34G-0e-tgO" customClass="SearchTextField" customModule="BiMapApp" customModuleProvider="target">
+                                <rect key="frame" x="15" y="74" width="363" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="UhZ-3e-V2q"/>
+                                </connections>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KGW-Ee-XQd">
+                                <rect key="frame" x="251" y="772" width="127" height="32"/>
+                                <segments>
+                                    <segment title="Apple"/>
+                                    <segment title="Google"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mapProviderSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="ugs-V0-VRa"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="y0X-VI-gts">
+                                <rect key="frame" x="151" y="726" width="227" height="32"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                    <segment title="Hybrid"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mapTypeSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="50B-H1-g9R"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUn-Mq-ZuO">
+                                <rect key="frame" x="353" y="685.33333333333337" width="25" height="25.666666666666629"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="location" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="toUserLocationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n5B-Mx-3VI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KGW-Ee-XQd" secondAttribute="bottom" constant="15" id="02S-sw-O1V"/>
+                            <constraint firstItem="AfW-DL-i1I" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3JA-V3-ftZ"/>
+                            <constraint firstItem="y0X-VI-gts" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="F1l-o4-XiM"/>
+                            <constraint firstItem="34G-0e-tgO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="NZv-ME-GCt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KGW-Ee-XQd" secondAttribute="trailing" constant="15" id="P7j-ra-QGQ"/>
+                            <constraint firstItem="kUn-Mq-ZuO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Xi2-dI-xUQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="34G-0e-tgO" secondAttribute="trailing" constant="15" id="blH-BW-wfa"/>
+                            <constraint firstItem="34G-0e-tgO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="eTy-lD-dh5"/>
+                            <constraint firstItem="KGW-Ee-XQd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="gGI-y3-Sgt"/>
+                            <constraint firstItem="AfW-DL-i1I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kUv-L4-aAf"/>
+                            <constraint firstItem="AfW-DL-i1I" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lPC-pU-eRP"/>
+                            <constraint firstItem="y0X-VI-gts" firstAttribute="top" secondItem="kUn-Mq-ZuO" secondAttribute="bottom" constant="15" id="lnP-ZL-5hS"/>
+                            <constraint firstAttribute="bottom" secondItem="AfW-DL-i1I" secondAttribute="bottom" id="qJh-qg-mH6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kUn-Mq-ZuO" secondAttribute="trailing" constant="15" id="qdn-9K-6QZ"/>
+                            <constraint firstItem="KGW-Ee-XQd" firstAttribute="top" secondItem="y0X-VI-gts" secondAttribute="bottom" constant="15" id="xol-Qq-86U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y0X-VI-gts" secondAttribute="trailing" constant="15" id="ybP-rz-PRA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="googleMapsMapView" destination="gS0-fQ-tK9" id="WwO-5Y-Ito"/>
+                        <outlet property="interfaceView" destination="8bC-Xf-vdC" id="8uh-hT-MD6"/>
+                        <outlet property="mapContainerView" destination="AfW-DL-i1I" id="KjX-4g-0al"/>
+                        <outlet property="mapProviderSwitch" destination="KGW-Ee-XQd" id="vK7-le-1xo"/>
+                        <outlet property="mapTypeSwitch" destination="y0X-VI-gts" id="gNZ-TR-jKj"/>
+                        <outlet property="searchLocationTextField" destination="34G-0e-tgO" id="suL-l1-h4U"/>
+                        <outlet property="toUserLocationButton" destination="kUn-Mq-ZuO" id="XkG-7o-2h6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
